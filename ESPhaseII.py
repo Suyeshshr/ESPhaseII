@@ -158,7 +158,7 @@ def impData():
 
 
   bucket_name = 'suyesh-es-task-26102021'
-  object_key ="11-9-2021/part-00000-aa51abd7-b3c2-49bb-b3ae-6d1c3b366556-c000.json"
+  object_key =tmp[0]
 
 
   path = 's3://{}:{}@{}/{}'.format(aws_key, aws_secret, bucket_name, object_key)
