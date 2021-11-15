@@ -25,7 +25,7 @@ def ecommerce(df,i):
         yield{
             '_index':'ecommerce',
             '_type':'_doc',
-            '_id':line.get('category_id','')+line.get('product_id',''),
+            '_id':str(line.get('category_id',''))+"-"+str(i),
             '_source':{
                 'id':i,
                 'timestamp':datetime.now(),
